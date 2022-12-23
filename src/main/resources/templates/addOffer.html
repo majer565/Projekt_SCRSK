@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sieci projekt</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <header>
+
+        <a href="#" class="nav_text">SCRSK</a>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a th:href="@{/home}">Home</a></li>
+                <li><a th:href="@{/profil}">Profil</a></li>
+                <li><a th:href="@{/oferty}">Oferty</a></li>
+            </ul>
+        </nav>
+
+        <a class="ctg" th:href="@{/logout}"><button>Wyloguj</button></a>
+
+    </header>
+
+    <div class="add-offer-content">
+        <form th:action="@{/addNewOffer}" method="post">
+            <label>Nazwa urządzenia</label><input type="text" placeholder="Nazwa" th:value="${name}" th:name="@{name}">
+            <label>Cena</label><input type="number" placeholder="Cena" th:value="${price}" th:name="@{price}">
+            <label>Opis</label><input type="text" placeholder="Cena" th:value="${description}" th:name="@{description}">
+            <input type="submit" value="Dodaj" id="addButton">
+        </form>
+    </div>
+</body>
+</html>

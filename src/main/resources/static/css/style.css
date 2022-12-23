@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+header li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header .nav_text {
+    cursor: pointer;
+}
+
+header .nav_links {
+    list-style: none;
+}
+
+header .nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+header .nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+header .nav_links li a:hover {
+    color: #ff3c78;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: rgba(255, 60, 120, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgba(255, 60, 120, 0.8);
+}
+
+.content{
+    width: 600px;
+    margin: 100px auto;
+}
+
+.content span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.profile-content{
+    width: 600px;
+    margin: 100px auto;
+}
+
+.profile-content{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    border-left: #ff3c78 solid 2px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.profile-content h2{
+    color: #edf0f1;
+}
+
+.context-box {
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+    color: #24CDFF;
+}
+
+.context-box span{
+    color: #24CDFF;
+    font-size: 15px;
+}
+
+.profile-content button{
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 60, 120, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.offer-content{
+    width: 600px;
+    margin: 100px auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.offer-content h2{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: #ff3c78 solid 2px;
+}
+
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+
+}
+td , th{
+    padding: 15px 20px;
+    text-align: center;
+}
+th{
+    background-color: #ff3c78;
+    color: #fafafa;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+td button {
+    padding: 9px 15px;
+    background-color: rgba(255, 60, 120, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: rgba(255, 60, 120, 0.7);
+}
+
+.info-content{
+    width: 600px;
+    margin: 100px auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    border-left: #ff3c78 solid 2px;
+    padding-left: 20px;
+}
+
+.info-content h2{
+    color: #edf0f1;
+}
+
+.info-content button{
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 60, 120, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.info-content button:hover{
+    background-color: rgba(255, 60, 120, 0.7);
+}
+
+.add-offer-content{
+    width: 600px;
+    margin: 100px auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #edf0f1;
+    justify-content: center;
+}
+
+.add-offer-content label{
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: #ff3c78 solid 2px;
+}
+
+.add-offer-content input{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #edf0f1;
+    border: #edf0f1 1px solid;
+    transition: all 0.3s ease 0s;
+}
+
+.add-offer-content input:focus {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 60, 120, 0.2);
+}
+
+.add-offer-content input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#addButton {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: #ff3c78 1px solid;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #edf0f1;
+}
+#addButton:hover {
+    background-color: #ff3c78;
+}

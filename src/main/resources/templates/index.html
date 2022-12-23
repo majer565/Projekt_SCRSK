@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sieci projekt</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <header>
+
+        <a href="#" class="nav_text">SCRSK</a>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a th:href="@{/home}">Home</a></li>
+                <li><a th:href="@{/profil}">Profil</a></li>
+                <li><a th:href="@{/oferty}">Oferty</a></li>
+            </ul>
+        </nav>
+
+        <a class="ctg" th:href="@{/logout}"><button>Wyloguj</button></a>
+
+    </header>
+
+    <div class="content">
+
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel purus vitae metus sodales iaculis sit amet sit amet erat. Donec eget orci at lorem sollicitudin pharetra et vel sem. Nullam aliquet eleifend ligula vel euismod. Maecenas molestie aliquam dui volutpat elementum. Phasellus tortor eros, consequat et tincidunt sit amet, pretium ut eros. Donec dictum ex dolor, et dignissim dui iaculis id. Donec euismod libero urna. Cras luctus, orci a lacinia feugiat, massa odio sodales eros, vitae iaculis nunc mi non odio. Integer maximus neque vel congue tempor. Nam nisi augue, tristique eu varius sit amet, mollis id diam. Nunc maximus accumsan mi non efficitur. Phasellus gravida, diam eget rutrum posuere, metus odio cursus felis, eget feugiat lectus enim eu ante.</span>
+
+    </div>
+</body>
+</html>

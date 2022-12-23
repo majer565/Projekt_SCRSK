@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sieci projekt</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <header>
+
+        <a href="#" class="nav_text">SCRSK</a>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a th:href="@{/home}">Home</a></li>
+                <li><a th:href="@{/profil}">Profil</a></li>
+                <li><a th:href="@{/oferty}">Oferty</a></li>
+            </ul>
+        </nav>
+
+        <a class="ctg" th:href="@{/logout}"><button>Wyloguj</button></a>
+
+    </header>
+
+    <div class="info-content">
+
+        <div class="context-box">
+            <h2>Oferta: <span><span th:text="${offer.device.name}"></span></span></h2>
+        </div>
+        <div class="context-box">
+            <h2>Użytkownik: <span><span th:text="${offer.user.username}"></span></span></h2>
+        </div>
+        <div class="context-box">
+            <h2>Data dodania: <span><span th:text="${offer.device.date}"></span></span></h2>
+        </div>
+        <div class="context-box">
+            <h2>Cena: <span><span th:text="${offer.device.price}"></span></span></h2>
+        </div>
+        <div class="context-box">
+            <h2>Opis: <span><span th:text="${offer.device.description}"></span></span></h2>
+        </div>
+        <div class="context-box">
+            <a th:href="@{/removeOffer(id=${offer.device.id})}"><button>Usuń ofertę</button></a>
+        </div>
+
+    </div>
+</body>
+</html>

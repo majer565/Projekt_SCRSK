@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sieci projekt</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <header>
+
+        <a href="#" class="nav_text">SCRSK</a>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a th:href="@{/home}">Home</a></li>
+                <li><a th:href="@{/profil}">Profil</a></li>
+                <li><a th:href="@{/oferty}">Oferty</a></li>
+            </ul>
+        </nav>
+
+        <a class="ctg" th:href="@{/logout}"><button>Wyloguj</button></a>
+
+    </header>
+
+    <div class="offer-content">
+
+        <h2>Oferty</h2>
+
+        <table id="offer-table">
+
+            <thead>
+                <tr>
+                    <th>Użytkownik</th>
+                    <th>Urządzenie</th>
+                    <th>Cena</th>
+                    <th>Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="offer: ${offers}">
+                    <td th:text="${offer.user.username}"/>
+                    <td th:text="${offer.device.name}"/>
+                    <td th:text="${offer.device.price} + ' PLN'"/>
+                    <td><a th:href="@{/oferta(id=${offer.device.id})}"><button>INFO</button></a></td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+</body>
+</html>
